@@ -13,7 +13,7 @@ public class FinishTrigger : MonoBehaviour
     {
         if (playerInRange)
         {
-            if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 SceneManager.LoadScene("EndScene", LoadSceneMode.Single);
             }

@@ -49,7 +49,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (!isDialogueActive) return;
 
-        if ((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && !isFinishDialogueActive)
+        if (Input.GetKeyDown(KeyCode.E) && !isFinishDialogueActive)
         {
             RefreshDialogueText();
         }
