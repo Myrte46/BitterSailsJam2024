@@ -206,8 +206,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 410487186}
   m_HandleRect: {fileID: 410487185}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.6928441
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -277,7 +277,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 9457ad66fd31e814f9aa22cea160d031, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 0e4182ef376573e4198ce4260b00773e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5278bc104a99599409fb119dc90df366, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -668,7 +668,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2061072366}
+  - {fileID: 1581665981}
   m_Father: {fileID: 1477028421}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -803,8 +803,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 30}
-  m_SizeDelta: {x: 0, y: -60}
+  m_AnchoredPosition: {x: 0, y: 20}
+  m_SizeDelta: {x: -40, y: -80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1477028422
 MonoBehaviour:
@@ -818,14 +818,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Content: {fileID: 2061072366}
-  m_Horizontal: 1
-  m_Vertical: 0
+  m_Content: {fileID: 1581665981}
+  m_Horizontal: 0
+  m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 10
   m_Viewport: {fileID: 993553498}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 151866363}
@@ -885,6 +885,7 @@ GameObject:
   - component: {fileID: 1581665981}
   - component: {fileID: 1581665983}
   - component: {fileID: 1581665982}
+  - component: {fileID: 1581665984}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -899,19 +900,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581665980}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2061072366}
+  m_Father: {fileID: 993553498}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 10, y: -10}
-  m_SizeDelta: {x: -20, y: -20}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2.5, y: 0}
+  m_SizeDelta: {x: -5, y: 0}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1581665982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -932,7 +933,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "Welcome to the little town of Sinkorswim. This town is where the poorest
+    of the poor live.\r\n\nThe recent inflations haven't been nice to the town nor
+    its inhabitants.\r\n\nYou are Dave and you used to live in a middle-class town,
+    and a skill you have always had is how easy it is for you to bring people together.\nIt
+    is one of the reasons why you were able to survive as long as you did even with
+    the years upon years of higher and higher inflation rates. \n\nBecause usually
+    you'd know a guy who could help you fix the problem usually without ever having
+    to spend any actual money on it. \r\n\r\n\nYou are being forced to move into
+    Sinkorswim because inflation finally have become so high that even you had to
+    give in and sell your house.\n\n But you just see this as a new way to start
+    making connections. Your first order of business, build a community so we can
+    help each other out.\r\n\nIn this town you will find out that everyone has needs
+    just like you do. But something the town's people themselves don't know is that
+    almost everyone in this town has a proficiency in something that is exactly aligning
+    with what someone else needs help with. \r\n\r\nYour job here is to find out
+    what ails people and make sure you are able to bring the right people together
+    for the job. Because if anyone can do this. It is Dave 'who knows a guy' Woods.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fb3c8e853026cf24cb35701b931e0fe5, type: 2}
   m_sharedMaterial: {fileID: -7926379854194525475, guid: fb3c8e853026cf24cb35701b931e0fe5, type: 2}
@@ -959,10 +976,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 36
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -995,7 +1012,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0.63323975, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1009,6 +1026,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581665980}
   m_CullTransparentMesh: 1
+--- !u!114 &1581665984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581665980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &1889014681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,11 +1157,11 @@ RectTransform:
   m_Father: {fileID: 685766784}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 30.25}
-  m_SizeDelta: {x: 960, y: 60.5}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 250, y: 60.5}
+  m_Pivot: {x: 1, y: 0}
 --- !u!114 &2035223521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1228,40 +1259,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035223519}
   m_CullTransparentMesh: 1
---- !u!1 &2061072365
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2061072366}
-  m_Layer: 5
-  m_Name: Content
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2061072366
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2061072365}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1581665981}
-  m_Father: {fileID: 993553498}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 1}
